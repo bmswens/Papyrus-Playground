@@ -1,5 +1,8 @@
 Scriptname STSStartupScript 
 
+short MarkSet
+short MarkHomeSet
+
 Begin GameMode
 
 If GetStage STSStartupQuest == 0
@@ -25,6 +28,13 @@ If GetStage STSStartupQuest == 0
     ; Skingrad
     SulinusVassinus01.addSpell STSSkingradSpell
     SetStage STSStartupQuest 1
+ElseIf GetStage STSStartupQuest == 1
+    ; Mark and Recall
+    GasparStegineRef.addSpell STSMarkSpell
+    GasparStegineRef.addSpell STSRecallSpell
+    GasparStegineRef.addSpell STSMarkHomeSpell
+    GasparStegineRef.addSpell STSRecallHomeSpell
+	SetStage STSStartupQuest 2
 EndIf
 
 End

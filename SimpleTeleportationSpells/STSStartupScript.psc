@@ -35,6 +35,20 @@ ElseIf GetStage STSStartupQuest == 1
     GasparStegineRef.addSpell STSMarkHomeSpell
     GasparStegineRef.addSpell STSRecallHomeSpell
 	SetStage STSStartupQuest 2
+ElseIf GetStage STSStartupQuest == 2
+    ; Shivering Isles
+    GasparStegineRef.addSpell STSMadnessSpell
+	; Turns out there's only one spell merchant
+	SEEarilRef.addSpell STSSanitySpell
+    SEEarilRef.addSpell STSBlissSpell
+    SEEarilRef.addSpell STSCrucibleSpell
+    SEEarilRef.addSpell STSDeepwallowSpell
+    SEEarilRef.addSpell STSFellmoorSpell
+    SEEarilRef.addSpell STSHaleSpell
+    SEEarilRef.addSpell STSHighcrossSpell
+    SEEarilRef.addSpell STSPasswallSpell
+    SEEarilRef.addSpell STSSplitSpell
+	SetStage STSStartupQuest 3
 EndIf
 
 End

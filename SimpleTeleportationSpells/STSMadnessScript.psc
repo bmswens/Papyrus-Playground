@@ -1,4 +1,4 @@
-Scriptname STSKavtchScript
+Scriptname STSMadnessScript
 
 Begin ScriptEffectFinish
 
@@ -8,6 +8,6 @@ If GetPlayerInSEWorld == 1
 EndIf
 
 playSound DRSOblivionGateOpen
-Player.MoveTo STSKavtchMarker
+Player.MoveTo SEGateMapMarker
 
 End
